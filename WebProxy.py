@@ -12,7 +12,7 @@ tcpSerSock.listen(5)
 # Fill in end.
 while 1:
     # Strat receiving data from the client
-    print(Ready to serve...')
+    print('Ready to serve...')
     tcpCliSock, addr = tcpSerSock.accept()
     print('Received a connection from:', addr)
 
@@ -42,7 +42,7 @@ while 1:
         tcpCliSock.send("\r\n")
         tcpCliSock.send(outputdata)
         # Fill in end.
-            print('Read from cache')
+        print('Read from cache')
     # Error handling for file not found in cache
 
     except IOError:
